@@ -168,6 +168,9 @@
           options = { headerLevelStart: 3, omitExtraWLInCodeBlocks: true, tables: true, simpleLineBreaks: true, simplifiedAutoLink: true }
           this.showdown = new showdown.Converter(options)
         },
+        axios: {
+          baseURL: 'https://memoporon.herokuapp.com'
+        },
         methods: {
           listSnippet: function() {
             axios.get('/snippets.json')
