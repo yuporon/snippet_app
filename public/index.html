@@ -170,7 +170,7 @@
         },
         methods: {
           listSnippet: function() {
-            axios.get('https://memoporon.herokuapp.com/snippets.json')
+            axios.get('/snippets.json')
               .then(response => {
                 console.log(response)
                 this.allData = response.data
@@ -195,7 +195,7 @@
             this.dialogPostFlag = !this.dialogPostFlag
           },
           postSnippet: function() {
-            axios.post('https://memoporon.herokuapp.com/snippets.json', {title:this.postTitle, language:this.postLanguage, contents:this.postContents})
+            axios.post('/snippets.json', {title:this.postTitle, language:this.postLanguage, contents:this.postContents})
               .then(response => {
                 this.listSnippet();
                 this.postTitle = ''
@@ -207,7 +207,7 @@
             this.dialogPostFlag = !this.dialogPostFlag
           },
           putSnippet: function() {
-            axios.put('https://memoporon.herokuapp.com/snippets/' + this.id + '.json', {title:this.putTitle, language:this.putLanguage, contents:this.putContents})
+            axios.put('/snippets/' + this.id + '.json', {title:this.putTitle, language:this.putLanguage, contents:this.putContents})
               .then(response => {
                 this.listSnippet();
               }
@@ -215,7 +215,7 @@
             this.dialogPutFlag = !this.dialogPutFlag
           },
           togglePutModal: function(id) {
-            axios.get('https://memoporon.herokuapp.com/snippets/' + id + '.json')
+            axios.get('/snippets/' + id + '.json')
               .then(response => {
                 this.putTitle = response.data.title
                 this.putLanguage = response.data.language
@@ -227,7 +227,7 @@
             this.dialogPutFlag = !this.dialogPutFlag
           },
           deleteSnippet: function() {
-            axios.delete('https://memoporon.herokuapp.com/snippets/' + this.id + '.json')
+            axios.delete('/snippets/' + this.id + '.json')
               .then(response => {
                 this.listSnippet();
               }
