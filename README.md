@@ -1,24 +1,26 @@
-# README
+# スニペットアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+### リンク
+[https://memoporon.herokuapp.com/](https://memoporon.herokuapp.com/)
 
-* Ruby version
+### 目的
+- Axiosを使ってみる
+- Vue.jsのUIライブラリであるVuetifyを学ぶ
+- HEROKUでデプロイ
 
-* System dependencies
+### 内容
+- メモの追加
+- メモの削除
+- メモの更新
+- メモをマークダウン表示
+- 検索機能
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 環境
+- MacOS BigSur 11.2.3
+- Ruby 2.5.1
+- Ruby on Rails 5.2.3
+- SQLite 3.28.0
+- Vue.js 2.6.10
+- Vuetify 1.5
