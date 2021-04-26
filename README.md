@@ -7,6 +7,7 @@
 
 ### 目的
 - Axiosを使ってみる
+- SPAサイトを学ぶ
 - Vue.jsのUIライブラリであるVuetifyを学ぶ
 - HEROKUでデプロイ
 
